@@ -16,10 +16,14 @@ COPY ./sleep10.sh /
 COPY ./advanced.config /etc/riak/
 
 RUN chmod 777 /var/lib/riak/
+RUN chmod 777 /var/lib/riak-cs/
+RUN chmod 777 /var/lib/stanchion/
 RUN chmod 777 /var/log/riak/
 RUN chmod 777 /var/log/riak-cs/
 RUN chmod 777 /var/log/stanchion/
 VOLUME /var/lib/riak/
+VOLUME /var/lib/riak-cs/
+VOLUME /var/lib/stanchion/
 VOLUME /var/log/riak/
 VOLUME /var/log/riak-cs/
 VOLUME /var/log/stanchion/
