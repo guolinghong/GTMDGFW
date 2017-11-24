@@ -20,8 +20,4 @@ riak start
 stanchion start
 riak-cs start
 
-# if master node, create admin account and write keys to /var/lib/riak/admin_keys.json 
-# else copy keys from master node, somehow...
-
-
 while(true); do sleep 10;done
