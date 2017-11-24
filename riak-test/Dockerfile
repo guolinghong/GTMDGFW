@@ -13,6 +13,7 @@ RUN yum -y install stanchion
 #RUN sed -i.bak 's/127.0.0.1:8098/0.0.0.0:8098/' /etc/riak/riak.conf
 #RUN sed -i.bak 's/127.0.0.1:8087/0.0.0.0:8087/' /etc/riak-cs/riak-cs.conf
 COPY ./sleep10.sh /
+RUN chmod +x /sleep10.sh
 COPY ./advanced.config /etc/riak/
 
 RUN chmod 777 /var/lib/riak/
