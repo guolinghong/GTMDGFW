@@ -1,4 +1,4 @@
 #! /bin/bash
 
-../docker-entrypoint.sh
-../mvn-entrypoint.sh
+./usr/local/bin/docker-entrypoint.sh
+./usr/local/bin/mvn-entrypoint.sh
