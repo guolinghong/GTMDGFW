@@ -15,6 +15,8 @@ ENV JAVA_VERSION 8u131
 ENV JAVA_ALPINE_VERSION 8.131.11-r2
 
 RUN apk update
+RUN apk upgrade
+RUN apk add bash
 RUN apk add git
 
 RUN set -x \
