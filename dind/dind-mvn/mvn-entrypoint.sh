@@ -32,6 +32,11 @@ copy_reference_files() {
   fi
 }
 
+
+if [ -z "$DOCKER_HOST" -a "$DOCKER_PORT_2375_TCP" ]; then
+	export DOCKER_HOST='tcp://docker:2375'
+fi
+
 export -f copy_reference_file
 copy_reference_files
 unset MAVEN_CONFIG
