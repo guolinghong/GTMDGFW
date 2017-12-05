@@ -1,4 +1,4 @@
-#! /bin/bash -eu
+#! /bin/bash
 
-/usr/local/bin/docker-entrypoint.sh
-/usr/local/bin/mvn-entrypoint.sh
+../docker-entrypoint.sh
+../mvn-entrypoint.sh
