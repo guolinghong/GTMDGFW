@@ -36,7 +36,7 @@ copy_reference_files() {
 # 	export DOCKER_HOST='tcp://docker:2375'
 # fi
 
-# export DOCKER_HOST='tcp://docker:2375'
+export DOCKER_HOST='1.1.2.11:2375'
 
 export -f copy_reference_file
 copy_reference_files
