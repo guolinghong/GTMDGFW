@@ -18,6 +18,7 @@ RUN apk update
 RUN apk upgrade
 RUN apk add bash
 RUN apk add git
+RUN apk add unzip
 
 RUN set -x \
         && apk add --no-cache \
